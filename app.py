@@ -44,7 +44,6 @@ async def register_doctor(doctor: Doctor):
         "$or": [
             {"email": doctor.email},
             {"uhid": doctor.uhid},
-            {"phone_number": doctor.phone_number}
         ]
     })
     if existing:
@@ -74,7 +73,7 @@ async def register_doctor(doctor: Doctor):
 @app.post("/registerpatient")
 async def register_patient(patient: Patient):
     # Check if patient with same email or UHID already exists
-    if await patient_data.find_one({"email": patient.email}) or await patient_data.find_one({"uhid": patient.uhid}) or await patient_data.find_one({"phone_number": patient.phone_number}):
+    if await patient_data.find_one({"email": patient.email}) or await patient_data.find_one({"uhid": patient.uhid})):
         raise HTTPException(status_code=400, detail="Patient with this UHID or email or Phone Number already exists.")
 
     # Validate Admin exists
