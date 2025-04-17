@@ -13,7 +13,7 @@ notification_data = database.Notification_Data
 
 
 # Load the API key from environment variables
-resend.api_key = "re_7M9JHY5a_PBfDiCxKRaQAaftLAg2eiJM4"
+resend.api_key = "re_4SN9wJyb_Hc3NrSzjepx9i8J4Pk73r6GS"
 
 def fix_mongo_id(document):
     if document is None:
@@ -53,7 +53,7 @@ def send_email_task(email: str, subject: str, message: str):
             "from": "Xolabs Health <ronaldshawv@thewad.co>",
             "to": [email],
             "subject": subject,
-            "html": f"""
+            "html": """
             <div style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 40px;">
               <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
                 <tr>
