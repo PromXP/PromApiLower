@@ -66,7 +66,7 @@ def send_email_task(email: str, subject: str, message: str):
                     <p style="font-size: 16px; color: #333;">Dear Patient,</p>
                     <p style="font-size: 16px; color: #333;">{message}</p>
                     <p style="margin-top: 30px; text-align: center;">
-                      <a href="https://promwebforms.onrender.com" style="display: inline-block; background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px;">
+                      <a href="https://promwebformslower.onrender.com" style="display: inline-block; background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px;">
                         Click here to Open The Questionnaire
                       </a>
                     </p>
