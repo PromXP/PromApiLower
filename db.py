@@ -13,7 +13,7 @@ notification_data = database.Notification_Data
 
 
 # Load the API key from environment variables
-resend.api_key = "re_4SN9wJyb_Hc3NrSzjepx9i8J4Pk73r6GS"
+resend.api_key = "re_YwfA61tz_Ho8naTfud7ZaUqZrF7efdo1d"
 
 def fix_mongo_id(document):
     if document is None:
